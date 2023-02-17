@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y91JMME5X8"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Y91JMME5X8');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>FuzzOP - Boost Developer Productivity</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="/">FuzzOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Instamock Beta Testing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Mashead text and app badges-->
+                        <div class="mb-5 mb-lg-0 text-center">
+                            <h1>Free JSON host</h1>
+                            <div class="row">
+                              <div class="col-lg-3 d-sm-block d-md-block"></div>
+                              <div class="col-lg-6 col-sm-12">
+                                <div id="previous-jsons"  style="display: none;">
+                                    <p>
+                                    Previous JSONS <select id="previous-jsons-select" class="form-select" aria-label="Default select example">
+                                    </select>
+                                    </p>
+                                    <p id="previous-jsons-link"></p>
+                                </div>
+                                <div id="editor" style="min-height: 300px;"></div>
+                                <a href="#" id="editor-submit" class="btn btn-primary input-block-level form-control">Submit</a>
+                              </div>
+                            </div>
+                            <p class="lead fw-normal text-muted mb-5"><a class="me-lg-3 mb-4 mb-lg-0" href="https://forms.gle/GwhEfJpuFSLvfJPS6"><h3>Drop your email here for Beta testing of Instamock</h3></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-12">
+                        <h2 class="display-4 lh-1 mb-4">How does FREE JSON host work?</h2>
+                        <p class="lead">
+                            <h3>What does the tool do?</h3>
+                            <p>It is a tool which hosts jsons. If you want a url which provides a specific JSON for testing, experimentation, hackathon or simply to test something, you can host the json here.</p>
+                            <h3>What is beta signup for then?</h3>
+                            <p>It is the next in line tool called Instamock which we will release soon. It takes out hassle of different domains and let you mock APIs and more directly from your localhost/staging with no rate limits. We will notify your for beta in March 2023.</p>
+                            <h3>How does it work?</h3>
+                            <p>It is simple. You enter a json in the box and submit it. A popup will come telling the path of the hosted json. In the list above, you can view your past jsons you created along with the path. Edit is not allowed.</p>
+                            <h3>What is the path of the hosted json?</h3>
+                            <p>For example, your json is {"key" : "value", "key2" : ["x", "y"]} and you receive path as https://app.fuzzop.com/json/1q23e4r. Here are the possibilities.</p>
+                            <p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <th>Path</th><th>Response</th>
+                                </thead>
+                                <tbody>
+                                    <tr><td>https://app.fuzzop.com/json/1q23e4r</td><td><b>{"key" : "value", "key2" : ["x", "y"]}</b></td></tr>
+                                    <tr><td>https://app.fuzzop.com/json/1q23e4r/key</td><td><b>"value"</b></td></tr>
+                                    <tr><td>https://app.fuzzop.com/json/1q23e4r/key2</td><td><b>"["x", "y"]"</b></td></tr>
+                                    <tr><td>https://app.fuzzop.com/json/1q23e4r/key2/1</td><td><b>"x"</b></td></tr>
+                                </tbody>
+                            </table></p>
+                            <blockquote class="blockquote alert alert-success">You should be able to fetch jsons without trouble from host of your local/staging.</blockquote>
+                            <h3>What are the limits?</h3>
+                            <p>There are certain limits of course being a free tool. First of all, the max json size is <b>10kb</b> and the max it will be hosted for is <b>12 hours</b>. Lastly, the rate limit is 100rpm beyond which you will be stopped for a while. Otherwise, create as many jsons as you like.</p>
+                            <h3>What are the liabilities we take as json host?</h3>
+                            <p><b>Zero</b>. While we maintain our best to keep serving awesome jsons, we don't intend to take any responsiblity of what you are hosting and how it is being used. If you face any financial loss because of this, we are not responsible. In short, we won't take hits for troubles you face.</p>
+                            <h3>I still have questions or feature requests</h3>
+                            <p>In that case, reach us out to fuzzop125 at the rate gmail dot com.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App badge section-->
+        <section class="bg-gradient-primary-to-secondary" id="download">
+          <div class="container px-5">
+              <h2 class="text-center text-white font-alt mb-4">SignUp for Beta!</h2>
+              <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                  <a class="me-lg-3 mb-4 mb-lg-0" href="https://forms.gle/GwhEfJpuFSLvfJPS6"><h3 class="text-white">> Drop your email here for Beta testing <</h3></a>
+              </div>
+          </div>
+        </section>
+      <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+          <div class="container px-5">
+              <div class="text-white-50 small">
+                  <div class="mb-2">&copy; FuzzOP 2023. All Rights Reserved.</div>
+              </div>
+          </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.15.1/ace.js" integrity="sha512-CfVYqNC369iSfGgZbSujTgySaSOMo+zxwXu2s9hNKiWmPGFNpXZn69kJ9tLMfwKGtZk86ZufAN1Q9EVranSAaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
