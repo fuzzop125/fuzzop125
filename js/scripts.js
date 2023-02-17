@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     var list = localStorage.getItem("list");
     try {
-        listOfUrls = JSON.parse(list);
+        listOfUrls = JSON.parse(list) || [];
         if (listOfUrls.length) {
             $("#previous-jsons").show();
             refreshList(listOfUrls);
